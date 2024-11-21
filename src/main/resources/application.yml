@@ -1,0 +1,32 @@
+spring:
+  flyway.enabled: true
+  flyway:
+    locations: classpath:db.migrations
+    schemas: file
+    url: jdbc:postgresql://localhost:5432/countbytesdb
+    user: pguser
+    password: pgpass
+    baselineOnMigrate: true
+  datasource:
+    username: pguser
+    password: pgpass
+    url: jdbc:postgresql://localhost:5432/countbytesdb
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+  application:
+    name: readandcount
+
+server:
+  port: 8080
+
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+      springframework:
+        jdbc:
+          core: DEBUG
