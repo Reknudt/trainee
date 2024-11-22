@@ -29,12 +29,12 @@ import io.swagger.v3.oas.annotations.servers.Server;
 },
         security = {
                 @SecurityRequirement(
-                        name = "keycloak"
+                        name = "Keycloak"
                 )
         }
 )
 @SecurityScheme(
-        name = "keycloak",
+        name = "Keycloak",
         type = SecuritySchemeType.OAUTH2,
         in = SecuritySchemeIn.HEADER,
         description = "Keycloak OAuth2 Authorization Code flow",
