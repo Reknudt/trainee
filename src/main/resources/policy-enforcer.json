@@ -1,6 +1,6 @@
 {
   "realm": "Demo-realm",
-  "auth-server-url": "http://localhost:8081",
+  "auth-server-url": "http://localhost:8080",
   "resource": "springboot-microservice",
   "credentials": {
     "secret": "QTEqwJp5740HihWQb2smtFZtlC26vkOe"
