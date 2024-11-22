@@ -23,6 +23,11 @@ spring:
       resourceserver:
         jwt:
           issuer-uri: http://localhost:8080/realms/Demo-realm
+springdoc:
+  swagger-ui:
+    oauth:
+      client-id: springboot-microservice
+      client-secret: QTEqwJp5740HihWQb2smtFZtlC26vkOe
 
 server:
   port: 8081

@@ -1,5 +1,8 @@
 package org.pavlov;
 
+import io.swagger.v3.oas.annotations.enums.SecuritySchemeIn;
+import io.swagger.v3.oas.annotations.enums.SecuritySchemeType;
+import io.swagger.v3.oas.annotations.security.SecurityScheme;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
@@ -13,6 +16,13 @@ import org.springframework.security.web.SecurityFilterChain;
 import java.util.stream.Stream;
 
 @SpringBootApplication
+@SecurityScheme(
+        name = "keycloak",
+        openIdConnectUrl = "http://localhost:8080/realms/Demo-realm/.well-known/openid-configuration",
+        scheme = "bearer",
+        type = SecuritySchemeType.OPENIDCONNECT,
+        in = SecuritySchemeIn.HEADER
+)
 public class Apitest {
 
     public static void main(String[] args) {
