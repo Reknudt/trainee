@@ -17,10 +17,10 @@
         <maven.compiler.source>23</maven.compiler.source>
         <maven.compiler.target>23</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <java.version>17</java.version>
+        <java.version>23</java.version>
         <mapstruct.version>1.5.5.Final</mapstruct.version>
         <postgresql.version>42.3.1</postgresql.version>
-        <swagger.version>2.1.13</swagger.version>
+        <swagger.version>2.2.25</swagger.version>
         <springdoc.version>2.5.0</springdoc.version>
         <flyway.version>10.21.0</flyway.version>
     </properties>
