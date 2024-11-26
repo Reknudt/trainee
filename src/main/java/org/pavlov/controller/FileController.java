@@ -29,7 +29,7 @@ import org.springframework.web.multipart.MultipartFile;
 @AllArgsConstructor
 @RestController
 @RequestMapping("/api/v1/count")
-@SecurityRequirement(name = "keycloak")
+@SecurityRequirement(name = "Keycloak")
 @Tag(
         name = "Подсчет байтов",
         description = "Взаимодействие для подсчета количества байтов в файле")

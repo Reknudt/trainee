@@ -5,7 +5,6 @@
   "credentials": {
     "secret": "QTEqwJp5740HihWQb2smtFZtlC26vkOe"
   },
-  "http-method-as-scope": true,
   "paths" : [
     {
       "path": "/swagger-ui/*",
@@ -13,17 +12,6 @@
     },{
       "path": "/v3/api-docs/*",
       "enforcement-mode": "DISABLED"
-    },{
-      "path": "/keycloak/users/{userId}",
-      "enforcement-mode": "ENFORCING",
-      "claim-information-point": {
-        "claims": {
-          "uri_claim": "{request.uri}"
-        }
-      }
-    }, {
-      "path": "/keycloak/*",
-      "enforcement-mode": "ENFORCING"
     }
   ]
 }

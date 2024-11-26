@@ -1,4 +1,11 @@
+server:
+  port: 8081
+
 spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/countbytesdb
+    username: pguser
+    password: pgpass
   flyway.enabled: true
   flyway:
     locations: classpath:db.migrations
@@ -7,10 +14,6 @@ spring:
     user: pguser
     password: pgpass
     baselineOnMigrate: true
-  datasource:
-    username: pguser
-    password: pgpass
-    url: jdbc:postgresql://localhost:5432/countbytesdb
   jpa:
     properties:
       hibernate:
@@ -31,16 +34,14 @@ springdoc:
       client-id: springboot-microservice
       client-secret: QTEqwJp5740HihWQb2smtFZtlC26vkOe
 
-grant-type-key: password
-name-key: employee1
-password-key: mypassword
-realm-key: Demo-realm
-server-url-key: http://localhost:8081
-client-id: springboot-microservice
-client-secret: QTEqwJp5740HihWQb2smtFZtlC26vkOe
-
-server:
-  port: 8081
+keycloak:
+  grant-type: password
+  name: admin
+  password: admin
+  realm: Demo-realm
+  server-url: http://localhost:8080
+  client-id: springboot-microservice
+  client-secret: QTEqwJp5740HihWQb2smtFZtlC26vkOe
 
 logging:
   level:

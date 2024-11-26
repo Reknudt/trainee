@@ -98,7 +98,6 @@
             <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
             <version>2.5.0</version>
         </dependency>
-
         <dependency>
             <groupId>org.keycloak</groupId>
             <artifactId>keycloak-core</artifactId>
@@ -114,7 +113,6 @@
             <artifactId>keycloak-policy-enforcer</artifactId>
             <version>22.0.5</version>
         </dependency>
-
     </dependencies>
 
     <build>
