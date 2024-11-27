@@ -24,7 +24,7 @@ public class SwaggerOpenIdConfig {
     }
 
     private SecurityScheme createOpenIdScheme() {
-        String connectUrl = String.format(OPENID_CONFIG_FORMAT, "http://localhost:8081", "Demo-realm");
+        String connectUrl = String.format(OPENID_CONFIG_FORMAT, "https://keycloak-dev-integration.softclub.by:7781/auth", "SCRealm");
 
         return new SecurityScheme()
                 .type(SecurityScheme.Type.OPENIDCONNECT)

@@ -31,15 +31,16 @@ spring:
 #springdoc:
 #  swagger-ui:
 #    oauth:
-#      client-id: springboot-microservice
+#      client-id: example-client
 #      client-secret: QTEqwJp5740HihWQb2smtFZtlC26vkOe
 
 keycloak:
-  realm: Demo-realm
-  auth-server-url: http://localhost:8081
-  resource: springboot-microservice
+  realm: spring-example
+  auth-server-url: http://localhost:8080
+  resource: example-client
   credentials:
-    secret: QTEqwJp5740HihWQb2smtFZtlC26vkOe
+    secret: 8hhqvAchoqpKceHdkXqJNEdPDm9FfzRV
+
 
 logging:
   level:
