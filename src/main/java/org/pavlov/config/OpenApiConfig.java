@@ -40,8 +40,8 @@ import io.swagger.v3.oas.annotations.servers.Server;
         description = "Keycloak OAuth2 Authorization Code flow",
         flows = @OAuthFlows(
                 authorizationCode = @OAuthFlow(
-                        authorizationUrl = "http://localhost:8080/auth/realms/Demo-realm",
-                        tokenUrl = "http://localhost:8080/auth/realms/Demo-realm/protocol/openid-connect/token"
+                        authorizationUrl = "http://localhost:8080/realms/Demo-realm",
+                        tokenUrl = "http://localhost:8080/realms/Demo-realm/protocol/openid-connect/token"
                 )
         )
 )
